@@ -12,7 +12,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
   onKey(event:any){
-   console.log(event);
+   console.log(event.target.value,";zlms",event.target.name);
   }
 
 }
