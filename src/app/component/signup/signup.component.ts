@@ -11,5 +11,8 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onKey(event:any){
+   console.log(event);
+  }
 
 }
