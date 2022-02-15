@@ -9,12 +9,7 @@ import { PlaylistComponent } from './component/playlist/playlist.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { HomeComponent } from './component/home/home.component';
-
-import { PlayComponent } from './play/play.component';
-import { CardComponent } from './cards/card.component';
-
 import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
-
 import {PlayComponent} from "./component/play/play.component"
 import {CardComponent} from "./component/cards/card.component";
 
@@ -35,22 +30,13 @@ import { AddMusicComponent } from './component/add-music/add-music.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-
     SidenavbarComponent,
     PlayComponent,
     CardComponent,
-
-  
     CategoriesHomeComponent,
     CategoryComponent,
-
-
-
-  
-      AlbumComponent,
-      AddMusicComponent
-
-
+    AlbumComponent,
+    AddMusicComponent
   ],
   imports: [
     BrowserModule,
