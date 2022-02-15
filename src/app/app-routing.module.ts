@@ -4,7 +4,7 @@ import {HomeComponent} from './component/home/home.component';
 import {LoginComponent} from './component/login/login.component';
 import {PlaylistComponent} from './component/playlist/playlist.component';
 import {ProfileComponent} from './component/profile/profile.component';
-
+import { SignupComponent } from './component/signup/signup.component';
 import { CategoryComponent } from './component/category/category.component';
 
 
@@ -19,7 +19,7 @@ const routes: Routes = [
 
   {path:'category', component:CategoryComponent},
 
-=======
+
   {path:'AddMusic', component:AddMusicComponent},
 
 ];
