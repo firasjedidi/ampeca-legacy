@@ -1,1 +1,12 @@
 <p>signup works!</p>
+<form >
+    <label>username </label>
+    <input type="username" name="username" id="username" (keyup)="onKey($event)" placeholder="username">
+    <label>email </label>
+    <input type="email" name="email" id="email" placeholder="email">
+    <label>password </label>
+    <input type="password " name="password " id="password " placeholder="password ">
+    <label>date </label>
+    <input type="date" name="date">
+    <a routerLink="../login" routerLinkActive="active">Login</a>
+</form>
