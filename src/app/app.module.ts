@@ -20,7 +20,9 @@ import { CategoriesHomeComponent } from './component/categories-home/categories-
 import {CategoryComponent} from "./component/category/category.component";
 
 import { AlbumComponent } from './component/album/album.component';
+
 import { AddMusicComponent } from './component/add/add-music/add-music.component';
+import { AddAlbumComponent } from './component/add/add-album/add-album.component';
 
 
 
@@ -28,23 +30,25 @@ import { AddMusicComponent } from './component/add/add-music/add-music.component
   declarations: [
     AppComponent,
     NavComponent,
-    SidenavbarComponent,
     ProfileComponent,
     LoginComponent,
     SignupComponent,
+
     
+    SidenavbarComponent,
     HomeComponent,
     PlaylistComponent,
-   
     CategoriesHomeComponent,
     CategoryComponent,
     CardComponent,
 
     PlayComponent,
+    
 
 
     AlbumComponent,
     AddMusicComponent,
+    AddAlbumComponent,
 
 
   ],
