@@ -14,8 +14,16 @@ import { PlayComponent } from './play/play.component';
 import { CardComponent } from './cards/card.component';
 
 import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
+
+import {PlayComponent} from "./component/play/play.component"
+import {CardComponent} from "./component/cards/card.component";
+
+import { CategoriesHomeComponent } from './component/categories-home/categories-home.component';
+import {CategoryComponent} from "./component/category/category.component";
+
 import { AlbumComponent } from './component/album/album.component';
 import { AddMusicComponent } from './component/add-music/add-music.component';
+
 
 
 @NgModule({
@@ -28,12 +36,20 @@ import { AddMusicComponent } from './component/add-music/add-music.component';
     SignupComponent,
     HomeComponent,
 
+    SidenavbarComponent,
     PlayComponent,
     CardComponent,
 
-    SidenavbarComponent,
+  
+    CategoriesHomeComponent,
+    CategoryComponent,
+
+
+
+  
       AlbumComponent,
       AddMusicComponent
+
 
   ],
   imports: [
