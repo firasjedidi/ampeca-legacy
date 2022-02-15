@@ -21,6 +21,7 @@ import {CategoryComponent} from "./component/category/category.component";
 
 import { AlbumComponent } from './component/album/album.component';
 import { AddMusicComponent } from './component/add-music/add-music.component';
+import { AddAlbumComponent } from './component/add-album/add-album.component';
 
 
 
@@ -45,6 +46,7 @@ import { AddMusicComponent } from './component/add-music/add-music.component';
 
     AlbumComponent,
     AddMusicComponent,
+    AddAlbumComponent,
 
 
   ],
