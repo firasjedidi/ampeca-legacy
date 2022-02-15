@@ -27,7 +27,7 @@ import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component
     HomeComponent,
 
     PlayComponent,
-    CardComponent
+    CardComponent,
 
     SidenavbarComponent
 
