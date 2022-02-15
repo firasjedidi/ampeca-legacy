@@ -14,6 +14,8 @@ import { PlayComponent } from './play/play.component';
 import { CardComponent } from './cards/card.component';
 
 import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
+import { AlbumComponent } from './component/album/album.component';
+import { AddMusicComponent } from './component/add-music/add-music.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component
     PlayComponent,
     CardComponent,
 
-    SidenavbarComponent
+    SidenavbarComponent,
+      AlbumComponent,
+      AddMusicComponent
 
   ],
   imports: [
