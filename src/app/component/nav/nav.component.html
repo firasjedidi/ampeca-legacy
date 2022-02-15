@@ -1,11 +1,18 @@
 <div>
-    <nav>
-        <div>
-            <input type="text" placeholder="">
+    <nav class="flex">
+        <div class="inputnav"> 
+            <input type="search" placeholder="search">
         </div>
-        <ul>
+        <ul *ngIf="auth=== false">
+            <li><a routerLink="../login" routerLinkActive="active">Login</a></li>
+            <li><a routerLink="../signup" routerLinkActive="active">signup</a></li>
+        </ul>
+        <!-- *ngIf="auth=== true" -->
+        <ul >
             <li><a routerLink="../profile" routerLinkActive="active">Profile</a></li>
-            <li><a routerLink="../playlist" routerLinkActive="active">PlayList</a></li>
+            <li><a routerLink="" routerLinkActive="active">Logout</a></li>
         </ul>
     </nav>
+    
+   
 </div>

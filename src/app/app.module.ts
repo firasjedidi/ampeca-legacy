@@ -10,6 +10,12 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { HomeComponent } from './component/home/home.component';
 
+import { PlayComponent } from './play/play.component';
+import { CardComponent } from './cards/card.component';
+
+import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +24,13 @@ import { HomeComponent } from './component/home/home.component';
     PlaylistComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+
+    PlayComponent,
+    CardComponent,
+
+    SidenavbarComponent
+
   ],
   imports: [
     BrowserModule,
