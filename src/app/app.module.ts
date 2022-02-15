@@ -9,6 +9,7 @@ import { PlaylistComponent } from './component/playlist/playlist.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { HomeComponent } from './component/home/home.component';
+import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './component/home/home.component';
     PlaylistComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    SidenavbarComponent
   ],
   imports: [
     BrowserModule,
