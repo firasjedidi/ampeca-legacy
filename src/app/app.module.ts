@@ -15,20 +15,37 @@ import { CardComponent } from './component/cards/card.component';
 import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
 
 
+
+import { CategoriesHomeComponent } from './component/categories-home/categories-home.component';
+import {CategoryComponent} from "./component/category/category.component";
+
+import { AlbumComponent } from './component/album/album.component';
+import { AddMusicComponent } from './component/add-music/add-music.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
+    SidenavbarComponent,
     ProfileComponent,
-    PlaylistComponent,
     LoginComponent,
     SignupComponent,
+    
     HomeComponent,
-
-    PlayComponent,
+    PlaylistComponent,
+   
+    CategoriesHomeComponent,
+    CategoryComponent,
     CardComponent,
 
-    SidenavbarComponent
+    PlayComponent,
+
+
+    AlbumComponent,
+    AddMusicComponent,
+
 
   ],
   imports: [
