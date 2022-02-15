@@ -1,1 +1,29 @@
-<p>profile works!</p>
+
+<div> 
+    <div>
+        <div>
+            <img src="">
+        </div>
+        <div>
+            <h3>username</h3>
+            <h3>email</h3>
+        </div>
+    </div>
+    <div>
+        <button (click)="edit()">
+            edit
+        </button>
+    </div>
+    <form *ngIf="auth">
+        <label>username </label>
+        <input type="username" name="username" id="username" (input)="input($event)" placeholder="username">
+        <label>email </label>
+        <input type="email" name="email" id="email"(input)="input($event)" placeholder="email">
+        <label>password </label>
+        <input type="password" name="password " id="password " (input)="input($event)" placeholder="password ">
+        <label>date </label>
+        <input type="date" (input)="input($event)" name="date">
+        <button (click)="onClick($event)"></button>
+        <a routerLink="../login" routerLinkActive="active">update</a>
+    </form>
+</div>
