@@ -1,13 +1,13 @@
 <p>signup works!</p>
 <form >
     <label>username </label>
-    <input type="username" name="username" id="username" (input)="onKey($event)" placeholder="username">
+    <input type="text" name="username" id="username"  (input)="onKey($event,'username')" placeholder="username"/>
     <label>email </label>
-    <input type="email" name="email" id="email"(input)="onKey($event)" placeholder="email">
+    <input type="email" name="email" id="email"(input)="onKey($event,'email')" placeholder="email"/>
     <label>password </label>
-    <input type="password" name="password " id="password " (input)="onKey($event)" placeholder="password ">
+    <input type="password" name="password " id="password "  (input)="onKey($event,'password')" placeholder="password "/>
     <label>date </label>
-    <input type="date" (input)="onKey($event)" name="date">
-    <button (click)="on($event)"></button>
+    <input type="date" (input)="onKey($event,'date')" name="date">
+    <button (click)="on($event)">ok</button>
     <a routerLink="../login" routerLinkActive="active">Login</a>
 </form>
