@@ -1,20 +1,23 @@
 import { Component, OnInit,Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import axios from 'axios'
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-@Injectable({
-  providedIn:'root'
-})
+
+
 export class SignupComponent implements OnInit {
-  constructor(private http:HttpClient) { }
-  url='http://localhost:3000/'
+  constructor(private router: Router) { }
+  url='http://localhost:3000/api/register'
   placeholder:string =""
   persondata:any={}
+  error=""
+ 
   ngOnInit(): void {
   }
+
   onKey(event:any,id:string){
   this.placeholder=event.target.value
   console.log(this.placeholder,event.target.name);
@@ -23,9 +26,17 @@ export class SignupComponent implements OnInit {
   }
 on(event:any){
  event.preventDefault();
-//  this.email,this.password,this.date
-  console.log(this.persondata);
-  return this.http.post(this.url,this.persondata)
+   axios.post(this.url,this.persondata).then((res)=>{
+     console.log(res)
+     if(res.data ==="The user has been registerd with us!"){
+      this.router.navigate(["login"])
+     }else{
+      this.router.navigate(["signup"])
+      this.error=res.data
+     }
+   }).catch((err)=>{
+     console.log(err)
+   })
 
 }
 }
