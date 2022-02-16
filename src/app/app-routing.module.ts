@@ -12,7 +12,7 @@ import {AddMusicComponent} from './component/add/add-music/add-music.component';
 import { AddAlbumComponent } from './component/add/add-album/add-album.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
+  {path:'home/:id', component:HomeComponent},
   {path:'login', component:LoginComponent},
   {path:'playlist', component:PlaylistComponent},
   {path:'profile', component:ProfileComponent},
