@@ -1,0 +1,13 @@
+<p>signup works!</p>
+<form >
+    <label>name </label>
+    <input type="text" name="name" id="name"  (input)="onKey($event,'name')" placeholder="name"/>
+    <label>email </label>
+    <input type="email" name="email" id="email"(input)="onKey($event,'email')" placeholder="email"/>
+    <label>password </label>
+    <input type="password" name="password " id="password "  (input)="onKey($event,'password')" placeholder="password "/>
+    <label>date </label>
+    <input type="date" (input)="onKey($event,'date')" name="date">
+    <button (click)="on($event)"  routerLinkActive="active"  >ok</button>
+    <p>{{error}}</p>
+</form>

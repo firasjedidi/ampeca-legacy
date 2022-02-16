@@ -1,0 +1,9 @@
+<form  >
+    <label>email </label>
+    <input type="email" name="email" (input)="userInfo($event,'email')" id="email" placeholder="email">
+    <label>password </label>
+    <input #password type="password " name="password " (input)="userInfo($event,'password')" id="password " placeholder="password ">
+    <button routerLink="../signup" routerLinkActive="active">Create account</button>
+    <button  (click)="submit($event)" routerLinkActive="active" >Login</button>
+    <!-- <p>{{error}}</p> -->
+</form>
