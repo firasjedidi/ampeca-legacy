@@ -10,5 +10,4 @@ db.connect(() => {
   console.log("Database Connected ");
 });
 
-module.exports =db
-;
+module.exports =db;

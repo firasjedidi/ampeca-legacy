@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   auth=false;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
   h(){}
+  search(e:Event) {
+    e.preventDefault();
+    console.log('searching!')
+  }
 
 }

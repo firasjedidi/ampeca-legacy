@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <nav class="flex">
         <div class="inputnav"> 
             <input type="search" placeholder="search">
@@ -7,13 +7,36 @@
         <ul *ngIf="auth=== false">
             <li><a routerLink="../login" routerLinkActive="active">Login</a></li>
             <li><a routerLink="../signup" routerLinkActive="active">signup</a></li>
-        </ul>
+        </ul> -->
         <!-- *ngIf="auth=== true" -->
-        <ul >
+        <!-- <ul >
             <li><a routerLink="../profile" routerLinkActive="active">Profile</a></li>
             <li><a routerLink="" routerLinkActive="active">Logout</a></li>
         </ul>
     </nav>
     
    
+</div> -->
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<div class="wrapper">
+    <div class="box">
+        <form id='searchBox'>
+         <input placeholder='Search here...' type='text'/>
+         <input (click)="search($event)" id='submitBtn' type='submit' value='Search'/>
+        </form>
+        <span id='icon'><img src="square.png" alt=""></span>
+        <nav id='navArea'>
+         <ul class='navArea'>
+             <li *ngIf="auth=== true" ><a routerLink="../profile" routerLinkActive="active" >Profile</a></li>
+            <li><a routerLink="../login" routerLinkActive="active">Login</a></li>
+            <li><a routerLink="../signup" routerLinkActive="active" >signup</a></li>
+            <li id='sub-menu'>
+               
+              
+            </li>
+            <li *ngIf="auth=== true" ><a   routerLink="" routerLinkActive="active" >Logout</a></li>
+         </ul>
+      </nav>
+    </div>
 </div>
