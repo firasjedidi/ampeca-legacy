@@ -23,19 +23,19 @@
     <div class="box">
         <form id='searchBox'>
          <input placeholder='Search here...' type='text'/>
-         <input id='submitBtn' type='submit' value='Search'/>
+         <input (click)="search($event)" id='submitBtn' type='submit' value='Search'/>
         </form>
         <span id='icon'><img src="square.png" alt=""></span>
         <nav id='navArea'>
          <ul class='navArea'>
-             <li><a routerLink="../profile" routerLinkActive="active" >Profile</a></li>
+             <li *ngIf="auth=== true" ><a routerLink="../profile" routerLinkActive="active" >Profile</a></li>
             <li><a routerLink="../login" routerLinkActive="active">Login</a></li>
             <li><a routerLink="../signup" routerLinkActive="active" >signup</a></li>
             <li id='sub-menu'>
                
               
             </li>
-            <li><a  routerLink="" routerLinkActive="active" >Logout</a></li>
+            <li *ngIf="auth=== true" ><a   routerLink="" routerLinkActive="active" >Logout</a></li>
          </ul>
       </nav>
     </div>

@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5;
   font-family: 'Baloo Paaji 2', cursive;
 }
 
@@ -168,3 +167,20 @@
   font-size: 1.2em;
 }
 
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+ul li {
+  border: 1px solid rgb(163, 7, 137); /* Add a thin border to each list item */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #ffffff; /* Add a grey background color */
+  padding: 12px; /* Add some padding */
+  
+}
+
+li:hover {
+  background-color: purple;
+}
